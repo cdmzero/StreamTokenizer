@@ -2,7 +2,7 @@
 
 ### Introduccion 
 
-Con StreamTokenizer clasificamos el input entre palabra y numeros.
+Con StreamTokenizer clasificamos el input entre palabra y numero.
 
 ### Sobre este proyecto
 
