@@ -1,0 +1,2 @@
+Hola es una demo de Stream Tokenizer con ficheros. 13 42 54
+Hi this is a demo of Stream Tokenizer with files. 13 42 54
