@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package FilesTokenizer;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -15,6 +16,9 @@ import java.io.StreamTokenizer;
  * @author jfunez
  */
 public class FileAnalysis {     
+     
+      static File ficheroParaProcesar = new File("src/FilesTokenizer/file.txt");
+      
       // Declaramos la var donde transformamos el flujo del buffer a formato String
       static String linea;
       
@@ -31,8 +35,12 @@ public class FileAnalysis {
     public static void main(String[] args) throws IOException
     {
         
+                    BufferedReader ficheroLectura = new BufferedReader(new FileReader(ficheroParaProcesar));
+                    
+                   
+                    
                     // Reader genera el flujo y FileReader procesa el fichero.
-                    flujoTransformado = new FileReader(new File("src/FilesTokenizer/file.txt"));
+                    flujoTransformado = new FileReader(ficheroParaProcesar);
                     
                     // Pasamos el flujo reader para que sea analizado por el tokenizador
                     st = new StreamTokenizer(flujoTransformado);
@@ -51,7 +59,13 @@ public class FileAnalysis {
 
                          }
                    }
-                    System.out.println("Resultado. ");
+                    System.out.println("Resultado del fichero. ");
+                    System.out.println("");
+                    for (String line = ficheroLectura.readLine(); line != null; line = ficheroLectura.readLine()) {
+                       System.out.println(line);
+                    }
+                    
+                    System.out.println("");
                     System.out.println("Cantidad de palabras: \b "+ cntPalabras);
                     System.out.println("Cantidad de numeros enteros: \b "+ cntNumeros);
                     System.out.println("\n");
