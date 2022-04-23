@@ -27,7 +27,7 @@ public class InputAnalysis {
       // Declaramos la var donde transformamos el flujo del buffer a formato String
       static String linea;
       
-      static List<String> CuerpoFichero = new ArrayList<>();
+
       
       // Declaramos el Tokenizador de flujo
       static StreamTokenizer st;
@@ -55,19 +55,10 @@ public class InputAnalysis {
                     break;
                     }
                     
-                    if(CuerpoFichero.isEmpty())
-                    {
-                    CuerpoFichero = new ArrayList<>();
-                    }else{
-                    
-                    CuerpoFichero.add(linea);
-                    }
-                    
-                    
             
                     
                     // Con Reader creamos el flujo  y con StringReader procesamos el String.
-                    Reader datosTransformados = new StringReader(linea);
+                    StringReader datosTransformados = new StringReader(linea);
                     
                     // Pasamos el flujo reader para que sea analizado por el tokenizador
                     st = new StreamTokenizer(datosTransformados);

@@ -35,7 +35,7 @@ public class FileAnalysis {
     public static void main(String[] args) throws IOException
     {
         
-                    BufferedReader ficheroLectura = new BufferedReader(new FileReader(ficheroParaProcesar));
+                  
                     
                    
                     
@@ -58,7 +58,11 @@ public class FileAnalysis {
                                  break;
 
                          }
+                   
                    }
+                    //Para leer el fichero
+                    BufferedReader ficheroLectura = new BufferedReader(new FileReader(ficheroParaProcesar));
+                     
                     System.out.println("Resultado del fichero. ");
                     System.out.println("");
                     for (String line = ficheroLectura.readLine(); line != null; line = ficheroLectura.readLine()) {
