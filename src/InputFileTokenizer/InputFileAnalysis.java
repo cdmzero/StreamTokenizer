@@ -46,9 +46,13 @@ public class InputFileAnalysis {
                         // Creamos un buffer para leer lo que escribimos por teclado   
                         BufferedReader datos  = new BufferedReader(new InputStreamReader(System.in));
 
-                        // Creamos un buffer para escribir el texto en el fichero
-                        BufferedWriter ficheroEscritura = new BufferedWriter(new FileWriter(ficheroParaProcesar));
-                    
+                    //
+
+                          BufferedWriter ficheroEscritura = new BufferedWriter(new FileWriter(ficheroParaProcesar));
+                
+                        //
+                        
+                     
                    
                         // Tomamos la linea de texto
                         linea = datos.readLine();
@@ -58,23 +62,33 @@ public class InputFileAnalysis {
                         // Para cerrar ejecucion
                         if("q".equals(linea))
                         {
-                        break;
+                             //ficheroEscritura.flush();
+                            break;
                         }
                     
                         // Concatenamos la linea al parrafo
                         if(parrafo != null)
                         {
-                          parrafo += linea + "\n";
+                            parrafo += linea + "\n";
                         }
                         else
                         {
-                          parrafo = linea + "\n";
+                            parrafo = linea + "\n";
                         }
-                  
-                    
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         // Escribimos el parrafo
+                      
                         ficheroEscritura.write(parrafo);
                         ficheroEscritura.close();
+                       
+                    
             
                         // Creamos un buffer para leer el texto del fichero
                         BufferedReader ficheroLectura = new BufferedReader(new FileReader(ficheroParaProcesar));
