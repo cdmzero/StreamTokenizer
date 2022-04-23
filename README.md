@@ -12,11 +12,15 @@ Con StreamTokenizer clasificamos el input entre palabra y numeros.
 3. Transformamos el flujo a string.
 4. Leemos el string y lo analizamos con el tokenizador
 
+<img width="1440" alt="Screenshot 2022-04-22 at 10 25 42" src="https://user-images.githubusercontent.com/59641925/164910796-51af808b-e9f2-466f-9ff6-645d28df8504.png">
+
 
 #### 2º Parte: FileAnalysis
 1. Declaramos el fichero file.txt.
 2. Recogemos el flujo a traves de un fichero.
 3. Leemos el `fichero` y lo analizamos con el tokenizador
+
+<img width="1440" alt="Screenshot 2022-04-23 at 16 46 32" src="https://user-images.githubusercontent.com/59641925/164910987-0a18ef02-69d2-41ee-856f-108137661ad4.png">
 
 #### 3º Parte: InputFileAnalysis
 1. Recogemos el flujo a traves del input de teclado
@@ -25,4 +29,6 @@ Con StreamTokenizer clasificamos el input entre palabra y numeros.
 5. Construimos un buffer para escribir el texto sobre el fichero.
 6. Leemos el texto del `fichero` y lo analizamos con el tokenizador
 
+
+<img width="1440" alt="Screenshot 2022-04-23 at 16 47 54" src="https://user-images.githubusercontent.com/59641925/164911026-2297ff51-a0bf-49c2-b424-1d9abe3580ec.png">
 
